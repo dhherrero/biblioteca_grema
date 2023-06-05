@@ -1,0 +1,133 @@
+.input{
+    border: 1px solid;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 1%;
+  }
+  .input:hover {
+    filter: drop-shadow(0 0 1em #0dfc00aa);
+  }
+
+  .main {
+    position:-webkit-sticky;
+    display: flex;
+    flex-direction: column;
+    background-color: #04049f;
+    max-height: 595px;
+    overflow: hidden;
+    width: 460px;
+    border-radius: 12px;
+    box-shadow: 7px 7px 10px 3px #24004628;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+    margin-right: 11px;
+  }
+  
+  /*checkbox to switch from sign up to login*/
+  #chk {
+    display: none;
+  }
+  
+  /*Login*/
+  .login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login label {
+    margin: 25% 0 5%;
+  }
+
+  .mensaje{
+    position: fixed;
+    margin-top: 16%;
+    margin-left: 30%;
+    max-height: 60px;
+    color: white;
+    border: 2px solid rgb(238, 130, 130);
+    border-radius: 10px;
+    background-color: #cf1b1b86;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  
+  label {
+    color: #fff;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
+  
+  
+  .inputLogin {
+    width: 100%;
+    height: 40px;
+    background: #e0dede;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+  }
+  .inputRegister {
+    width: 100%;
+    height: 25px;
+    background: #e0dede;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+  }
+  
+  /*Register*/
+  .register {
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(7%);
+    transition: .8s ease-in-out;
+  }
+  
+  .register label {
+    color: #04049f;
+    transform: scale(.7);
+  }
+  
+  #chk:checked ~ .register {
+    transform: translateY(-58%);
+  }
+  
+  #chk:checked ~ .register label {
+    transform: scale(1);
+    margin: 3% 0 5%;
+  }
+  
+  #chk:checked ~ .login label {
+    transform: scale(.6);
+    margin: -3% 0 15%;
+  }   
+  /*Button*/
+  .form button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: #fff;
+    background: #3e9f2f;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+  }
+  
+  .form button:hover {
+    background-color: #24a620;
+  }

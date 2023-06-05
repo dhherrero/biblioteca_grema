@@ -1,0 +1,46 @@
+.libro-content{
+    display: flex;
+}
+
+.infoYboton{
+    display: inline-block;
+}
+.foto{
+    width: 250px;
+    height: 440px;
+}
+
+.info{
+    border: 1px solid rgba(0, 0, 255, 0.279);
+    padding: 5px;
+    font-size: 1vw;
+    margin-left: 2%;
+    min-width: 500px;
+    max-height: 440px;
+    min-height: 425px;
+    position: relative;
+    text-align: justify;
+    overflow: auto;
+}
+
+.name{
+    color:rgb(160, 45, 222);
+}
+
+.botonReserva {
+    margin-top: 5px;
+    height: 2.5em;
+    float: right;
+    width: 8em;
+    border: none;
+    border-radius: 10em;
+    background: #016DD9;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 500;
+    
+
+   }
+   
+  

@@ -1,0 +1,46 @@
+
+.totalInfoUser{
+    border: 1px rgb(132, 127, 208) solid;
+    border-radius: 1%;
+    text-align: left;
+    padding-left: 10px;
+    width: 800px;
+    margin: 10px;
+    display: flex;
+}
+
+.datosUser{
+    font-size: 16px;
+    width: 250px;   
+}
+
+.textoUser{
+    display: block;
+    min-width: 330px;
+}
+
+.botonesUser{
+    width: 350px;
+    display: flex;
+    text-align: right;
+    padding: 10px;
+   
+ 
+   
+}
+.alienacion{
+    position: absolute;
+    text-align: center;
+    float: right;
+    width: 600px;
+   
+}
+.accionUser{
+    text-align: center;
+    margin-top: 28px;
+}
+
+
+
+
+

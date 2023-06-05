@@ -1,0 +1,58 @@
+.listaReservas{
+    margin-top: 4%;
+}
+
+.reserva{
+    border: 2px solid blue;
+    width: 700px;
+    display: inline-flex;
+    margin: 5px;
+
+}
+.infoReserva{
+    font-size: 1vw;
+}
+
+.reserva img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.reserva-content{
+    display: inline-block;
+    text-align: left;
+    width:inherit;
+    margin-left: 2%;
+    margin-right: 2%; 
+}
+
+
+.botonCancelarReserva {
+    margin-left: 1%;
+    height: 2.5em;
+    float: right;
+    width: 11em;
+    border: none;
+    border-radius: 10em;
+    background: #d90101;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 500;
+   }
+
+   .botonAmpliarReserva {
+    height: 2.5em;
+    float: right;
+    width: 11em;
+
+    border: none;
+    border-radius: 10em;
+    background: #01d954;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 500;
+   }
+   
+  

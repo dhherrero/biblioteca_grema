@@ -1,0 +1,94 @@
+ 
+.content{
+   padding-top:5%;
+   text-align: center;
+   align-items: center;
+   width: 550px;
+
+}
+.formulario{
+    width: 100%;
+}
+
+.formulario input {
+    
+    margin: 1%;
+    width: 90%;
+    
+}
+.inputOpcion{
+    text-align: left;
+    float: left;
+    margin-left: 3%;
+}
+
+
+
+
+.upload{
+    color: rgb(0, 30, 255);   
+}
+
+.inputNew {
+    background-color: #C6CAD1;
+    height: 20px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    /* text-align: center; */
+    border: 2px solid white;
+    border-radius: 5px;
+   
+    /*box-shadow: 3px 3px 2px rgb(85, 255, 119); */
+  }
+  
+  .inputNew:focus {
+    color: rgb(0, 0, 0);
+    background-color: #C6CAD1;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(150, 103, 82);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+  .numeros{
+    text-align: center;
+    margin-left: 11px;
+    width: 96%;
+    display: flex;
+  }
+
+  .dobleCampo{
+    text-align: center;
+    margin-left: 11px;
+    width: 96%;
+    display: flex;
+  }
+
+#descripcion{
+    overflow:auto;
+    overflow-y:auto;
+    max-width: 90%;
+    min-width: 90%;
+    height: 90px;
+    max-height: 120px;
+    min-height: 50px;
+}
+
+#descripcion::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+#descripcion::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 255, 242, 0.575);
+  border-radius: 18px;
+ 
+}
+
+#descripcion::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(76, 255, 240, 0.542);
+}
+#descripcion::-webkit-scrollbar-corner{
+  background-color: transparent;
+
+}
+

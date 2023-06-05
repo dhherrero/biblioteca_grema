@@ -1,0 +1,16 @@
+.error{
+    color: white;
+    position: relative;
+    border:2px solid red;
+    background-color: rgb(251, 115, 115);
+    border-radius: 10px;
+ 
+    min-width: 110px;
+    min-height: 20px;
+    max-width: 2220px;
+    margin: 10px;
+}
+
+.error:hover{
+    background-color: rgb(250, 150, 150);
+}

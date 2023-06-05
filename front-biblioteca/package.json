@@ -1,0 +1,48 @@
+{
+  "name": "front-biblioteca",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "npm run dev -- --host"
+  },
+  "dependencies": {
+    "@cloudinary/react": "^1.11.0",
+    "@cloudinary/url-gen": "^1.9.1",
+    "axios": "^1.3.2",
+    "cloudinary": "^1.34.0",
+    "dropbox": "^10.34.0",
+    "flickrapi": "^0.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "wouter": "^2.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "standard": "^17.0.0",
+    "vite": "^4.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-restricted-syntax": [
+        "error",
+        {
+          "selector": "Identifier[name=/^(await|break|case|catch|continue|debugger|default|delete|do|else|finally|for|function|if|in|instanceof|new|return|switch|this|throw|try|typeof|var|void|while|with)$/]",
+          "message": "Unexpected reserved word.",
+          "exceptions": [
+            "import"
+          ]
+        }
+      ]
+    }
+  }
+}

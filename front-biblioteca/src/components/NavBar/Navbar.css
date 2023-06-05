@@ -1,0 +1,98 @@
+
+.navbar{
+    left: 0;
+    top: 0;
+    width: 100%;
+    position:absolute;
+    background:#2220b5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navIcon{
+    width: 40px;
+    margin-right: 10px;
+    height: 40px !important;
+    padding: 6px !important;
+}
+
+.navIcon:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+ 
+  @keyframes navIcon-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .navIcon {
+      animation: navIcon-spin infinite 20s linear;
+    }
+  }
+
+
+.nav_logo{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    display: flex;
+    color: white;
+}
+.titulo{
+    margin-top: 4%;
+}
+.nav_items a{
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none;
+    height:520%; 
+}
+.nav_toggle{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav_items{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgba(86, 145, 255, 0.551);
+        display: flex;
+        flex-direction: column;
+        width: 100%;          
+        transform: translateX(-100%);
+        transition: 0.3s ease all;
+    }
+    .nav_items.open{
+        transform: translateX(0) !important
+    }
+    .nav_toggle{
+        display: flex !important;
+        flex-direction: column;                
+        margin: 15px;
+    }
+    .nav_toggle span{
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;             
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+    .nav_toggle.open > span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+    .nav_toggle.open > span:nth-child(2){
+        display: none;
+    }
+    .nav_toggle.open > span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+}
