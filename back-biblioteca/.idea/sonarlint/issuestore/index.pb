@@ -9,8 +9,6 @@ Ssrc/main/java/com/app/backbiblioteca/Back/Biblioteca/BackBibliotecaApplication.
 Lsrc/main/java/com/app/backbiblioteca/Back/users/controller/UserResponse.java,6/8/68ae455e682100645ad9f6ab7fdeeba332be6f5f
 t
 Dsrc/main/java/com/app/backbiblioteca/Back/users/userDTO/UserDTO.java,5/4/5493d1bb827846e499c504ac98e050c7e88053b5
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 {
 Ksrc/main/java/com/app/backbiblioteca/Back/books/controller/BookRequest.java,f/a/fafd52245b3cbb360794dd764e45e1eadd1408c0
 w
