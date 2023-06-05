@@ -1,4 +1,4 @@
-front-biblioteca/node_modules
+front-biblioteca/node_modules/*
 front-biblioteca/node_modules/vite/bin/vite.js
 front-biblioteca/node_modules/.vite/deps_temp/package.json
 front-biblioteca/node_modules/.vite/deps/_metadata.json
