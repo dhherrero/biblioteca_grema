@@ -1,12 +1,0 @@
-
-~
-java:S1104/"\Make hikariDataSource a static final constant or non-public and provide accessors if needed.(ıÒœøÿÿÿÿ8âùÆ©ƒ1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õ‡äÀúÿÿÿÿ8èùÆ©ƒ1
-p
-java:S1128"NRemove this unused import 'com.app.backbiblioteca.Back.books.BookDTO.BookDTO'.(„ş¸™üÿÿÿÿ8ÂúÆ©ƒ1
-b
-java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8ÃúÆ©ƒ1
-Y
-java:S1128"7Remove this unused import 'java.sql.PreparedStatement'.(òÄ™ƒÿÿÿÿÿ8ƒÌ¹¯ˆ1
-K
-java:S1128"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8ÃúÆ©ƒ1

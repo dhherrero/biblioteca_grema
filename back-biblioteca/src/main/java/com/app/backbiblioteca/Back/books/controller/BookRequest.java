@@ -2,11 +2,13 @@ package com.app.backbiblioteca.Back.books.controller;
 
 
 import lombok.Getter;
+import lombok.Setter;
 
 
 import java.sql.Date;
 
 @Getter
+@Setter
 public class BookRequest {
     private int id,edad,numeroPaginas, copias,edicion;
     private String titulo, autores, isbn, editorial,lenguaPublicacion,lenguaTraduccion,descripcion,formato,genero;

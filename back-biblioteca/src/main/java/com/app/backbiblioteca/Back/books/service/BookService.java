@@ -42,7 +42,11 @@ public class BookService {
         mapResponse.put("genero",order+ "genero");
         mapResponse.put("formato",order+ "formato");
         mapResponse.put("defecto"," ");
-        return mapResponse.get(orderBy);
+        if (mapResponse.containsKey(orderBy)) {
+            return mapResponse.get(orderBy);
+        } else {
+            return " ";
+        }
     }
 
     /**
@@ -132,7 +136,9 @@ public class BookService {
      * @return listado de libros
      */
     public ArrayList <BookDTO> allBooks(String orderBy){
-        String sql ="SELECT * FROM libro " + getOrder(orderBy) ;
+        //si intenta ordenar por un campo que no existe, no ordena, devuelve el orden por defecto
+        String orderBySql = getOrder(orderBy);
+        String sql ="SELECT * FROM libro " + orderBySql ;
         ArrayList <BookDTO> listaLibros = new ArrayList<>();
         try(Connection dbcon= db.hikariDataSource.getConnection(); PreparedStatement pst= dbcon.prepareStatement(sql)) {
             ResultSet rs = pst.executeQuery();

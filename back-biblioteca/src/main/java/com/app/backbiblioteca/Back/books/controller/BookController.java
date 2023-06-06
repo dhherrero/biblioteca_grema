@@ -3,6 +3,7 @@ package com.app.backbiblioteca.Back.books.controller;
 
 import com.app.backbiblioteca.Back.books.BookDTO.BookDTO;
 import com.app.backbiblioteca.Back.books.service.BookService;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ import java.util.Map;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
+@Configuration
 @RequestMapping("/book")
 public class BookController {
 

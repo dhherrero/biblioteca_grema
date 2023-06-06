@@ -14,5 +14,4 @@ public class ReservasDTO {
     private String nifUsuario,estadoReserva, titulo, portada;
     private Date fechaInicio, fechaFin;
 
-
 }

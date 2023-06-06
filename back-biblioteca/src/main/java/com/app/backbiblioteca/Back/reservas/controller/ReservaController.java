@@ -5,6 +5,7 @@ import com.app.backbiblioteca.Back.reservas.dto.ReservasDTO;
 import com.app.backbiblioteca.Back.reservas.service.ReservaService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,7 @@ import java.util.Map;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
+@Configuration
 @RequestMapping("/reserva")
 public class ReservaController {
     /**
