@@ -1,0 +1,28 @@
+
+Œ
+java:S1319ê"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ş’Ÿ¼ıÿÿÿÿ
+Œ
+java:S1319€"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÂŠ­Öùÿÿÿÿ
+M
+java:S2629M"7Use the built-in formatting to construct this argument.(¶ÆòÅ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…ñÛã
+}
+java:S40876"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
+W
+java:S34577"AFormat specifiers should be used instead of string concatenation.(Ú›æ
+W
+java:S3457M"AFormat specifiers should be used instead of string concatenation.(¶ÆòÅ
+}
+java:S4087|"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
+~
+java:S4087–"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
+~
+java:S4087ó"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
+]
+java:S3457ô"AFormat specifiers should be used instead of string concatenation.(¦îœˆùÿÿÿÿ
+~
+java:S4087Š"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
+]
+java:S3457‹"AFormat specifiers should be used instead of string concatenation.(–…‰åşÿÿÿÿ
+i
+java:S1128"NRemove this unused import 'com.app.backbiblioteca.Back.books.BookDTO.BookDTO'.(„ş¸™üÿÿÿÿ
