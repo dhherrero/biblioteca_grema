@@ -97,7 +97,7 @@ public class BookService {
      */
     public HttpStatus insertBook(BookRequest book){
         String sql ="INSERT INTO libro (titulo, autores, isbn, edad, editorial, fechaEdicion, lenguaPublicacion, lenguaTraduccion, numeroPaginas, descripcion, edicion, formato, genero, copias,portada,imagen2,imagen3) VALUES(?,?, ?,?,?, ?,?,?, ?,?,?, ?,?,?, ?,?,?)";
-
+        logger.info("/newBook");
         try(Connection dbcon= db.hikariDataSource.getConnection(); PreparedStatement pst= dbcon.prepareStatement(sql)) {
             pst.setString(1, book.getTitulo());
             pst.setString(2, book.getAutores());

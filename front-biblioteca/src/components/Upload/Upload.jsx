@@ -10,6 +10,7 @@ const UploadForm = () => {
   const [portada, setPortada] = useState(null);
   const [imagen2, setImagen2] = useState(null);
   const [imagen3, setImagen3] = useState(null);
+  const [response,setResponse]= useState();
 
 
   const [body, setBody] = useState({
@@ -55,13 +56,7 @@ const UploadForm = () => {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    /* ahora solo subiría la portada, falta gestionar las otras dos fotos */
-
-    /*if (!selectedFile) {
-      console.log('Please select a file');
-      return;
-    }*/
-    
+  
     if(portada){
       const formData = new FormData();
       formData.append('file', portada);
@@ -76,6 +71,7 @@ const UploadForm = () => {
         setPortada(null);
       } catch (error) {
         console.log(error);
+        setResponse("Error al cargar la foto");
       }
     }
 
@@ -93,6 +89,7 @@ const UploadForm = () => {
         setImagen2(null);
       } catch (error) {
         console.log(error);
+        setResponse("Error al cargar la foto");
       }
     }
     if(imagen3){
@@ -110,11 +107,17 @@ const UploadForm = () => {
         setImagen3(null);
       } catch (error) {
         console.log(error);
+        setResponse("Error al cargar la foto");
       }
     }
     if (!portada && !imagen2 && !imagen3) {
       console.log(body)
-      newLibro(body).then((result)=> console.log("RESULTADO UPLOAD: "+ result))
+      try{
+          await newLibro(body).then((result)=> {console.log("RESULTADO UPLOAD: "+ result);setResponse("Libro subido correctamente")})
+      }
+      catch{
+        setResponse("Error al cargar el libro");
+      }
     }
 
     
@@ -127,7 +130,7 @@ const UploadForm = () => {
      <Navbar />
     <div className='content' >
         <h4>Rellene los siguientes campos</h4>
-      <form onSubmit={handleFormSubmit} className="formulario">
+      <div  className="formulario">
         <input type="text" className="inputNew" onChange={handleLibroChange} name='titulo' placeholder='Titulo'/><br/>
         <textarea type="text" id="descripcion" onChange={handleLibroChange} name='descripcion' className="inputNew" placeholder='Descripción'/><br/>
         <input type="text" className="inputNew" onChange={handleLibroChange} name='autores' placeholder='Autor/es, por ejemplo:  Juan Rodriguez, Felipe Pintor'/><br/>
@@ -152,8 +155,9 @@ const UploadForm = () => {
         <input type="file" onChange={handleFileInputChange2} /><br/>
         <span className='inputOpcion'>Imagen 3</span>
         <input type="file" onChange={handleFileInputChange3} /><br/>
-        <button type="submit" className='upload'>Upload</button><br/>
-  </form>
+        <button type="submit" className='upload' onClick={()=>handleFormSubmit(event)}>Upload</button><br/>
+        {response? <div><p><b>Resultado:</b> {response} </p> <br/></div>:"" }
+  </div>
     </div></>
   );
 };

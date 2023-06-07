@@ -34,7 +34,7 @@ export default function MisReservas(){
         <>
             <Navbar />
             <div className='listaReservas'>
-                <h2>MIS RESERVAS</h2>
+                <h2>{sessionStorage.getItem("rol")==="superusuario"?"RESERVAS":"MIS RESERVAS"}</h2>
             {misReserva.length>0?misReserva.map(({titulo,portada,fechaInicio, fechaFin, idReserva, nifUsuario },i)=>{
                 return(
                     <div className='reserva' key={idReserva}>
