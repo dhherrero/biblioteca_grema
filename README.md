@@ -21,8 +21,8 @@ Trata de aplicación web con REST, es un sistema basado en la arquitectura REST 
 git clone https://github.com/dhherrero/biblioteca_grema
 ```
 ### 2. Base de datos
-Abrir terminal y ejecutar los siguientes comandos, donde 'tu_usuario' es el usuario de mysql, en el backend esta configurado el usuario como 'root', y la password '12345678', en el caso de no querer hacer cambios en la configuración del backend crear un usuario y contraseña de esas carcateristicas.
-#### 2.1 En el caso de querer crear los usuarios
+Abrir terminal y ejecutar los comandos de los siguientes apartados, donde 'tu_usuario' es el usuario de mysql. En el backend esta preconfigurado el usuario como 'root', y la password '12345678', en el caso de no querer hacer cambios en la preconfiguración del backend hay crear un usuario (aparatado 2.1) y contraseña de esas carcateristicas. En el caso de ya tener un usuario y contraseña en mysql ir directamente al apartado 2.2
+#### 2.1 Crear usuarios correspondientes a la preconfiguración
 Donde 'usuario_administrador' es el usuario con rol administrador en mysql
 ```
 mysql -u usuario_administrador -p
@@ -30,7 +30,7 @@ CREATE USER 'root'@'localhost' IDENTIFIED BY '12345678';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
 FLUSH PRIVILEGES;
 ```
-#### 2.2 En el caso de no haber creado el usuario
+#### 2.2 Cambio de usuario y contraseña en el backend
 Hay que cambiar la clase de conexión a la base de datos en el backend. En la ruta:
 ```
 src/main/java/com/app/backbiblioteca/Back/config/DatabaseConfig.java
