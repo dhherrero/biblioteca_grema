@@ -18,7 +18,7 @@ const UploadForm = () => {
 
   const [body, setBody] = useState({
         titulo:null,
-        autores:null,
+        autores:"desconocido",
         isbn:null,
         edad:null,
         editorial:null,

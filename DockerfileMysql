@@ -1,0 +1,15 @@
+# Utiliza la imagen base de MySQL
+FROM mysql:latest
+
+# Variables de entorno para configurar la base de datos
+ENV MYSQL_ROOT_PASSWORD=12345678
+ENV MYSQL_DATABASE=library-grema
+ENV MYSQL_USER=biblioteca
+ENV MYSQL_PASSWORD=12345678
+
+# Copia los scripts SQL de inicialización
+COPY ./mysql-scripts/*.sql /docker-entrypoint-initdb.d/
+RUN chmod +r /docker-entrypoint-initdb.d/*.sql
+# Exponer el puerto por defecto de MySQL (3306)
+EXPOSE 3306
+

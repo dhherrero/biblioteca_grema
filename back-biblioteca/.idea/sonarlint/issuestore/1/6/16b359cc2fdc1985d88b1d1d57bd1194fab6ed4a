@@ -1,22 +1,0 @@
-
-?
-java:S26296"$Invoke method(s) only conditionally.(³¥‰ÿÿÿÿÿ
-?
-java:S2629A"$Invoke method(s) only conditionally.(³¥‰ÿÿÿÿÿ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…¯ÚÓ
-5
-java:S1640"Convert this Map to an EnumMap.(§ÿæÆ
-A
-java:S1452"&Remove usage of generic wildcard type.(Æó¢üÿÿÿÿ
-<
-java:S1452)"&Remove usage of generic wildcard type.(³Ğ¬ª
-A
-java:S1452L"&Remove usage of generic wildcard type.(”ªëĞûÿÿÿÿ
-‰
-java:S1130X"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(£ˆ›Ãûÿÿÿÿ
-A
-java:S1452X"&Remove usage of generic wildcard type.(£ˆ›Ãûÿÿÿÿ
-A
-java:S1452c"&Remove usage of generic wildcard type.(‡šİÿÿÿÿÿ
-<
-java:S1452r"&Remove usage of generic wildcard type.(ßÕª°
