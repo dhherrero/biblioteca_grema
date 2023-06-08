@@ -32,7 +32,7 @@ public class DatabaseConfig {
         HikariDataSource dataSource = new HikariDataSource();
         dataSource.setJdbcUrl("jdbc:mysql://biblioteca_grema-mysql-1:3306/library-grema");
         //usuario de la base de datos mysql
-        dataSource.setUsername("biblioteca");
+        dataSource.setUsername("root");
         //contraseña de la base de datos mysql
         dataSource.setPassword("12345678");
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
