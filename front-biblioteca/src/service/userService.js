@@ -55,6 +55,8 @@ export const register= async(body,setLocation,setResponse)=>{
     response.data=== 'OK' ? handleLocation(body.nif, body.rol, setLocation) :setResponse("Error al registrar el usuario, compruebe los datos")
   } catch (error) {
     console.log(error);
+    setResponse("NIF ya registrado")
+
   }
 }
 

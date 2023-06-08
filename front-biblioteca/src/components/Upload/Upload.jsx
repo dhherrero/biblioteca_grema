@@ -121,12 +121,16 @@ const UploadForm = () => {
       }
       else{
       console.log(body)
-      try{
-          await newLibro(body).then((result)=> {console.log("RESULTADO UPLOAD: "+ result);setResponse(result)})
+      if(body.titulo===null){
+        setResponse("Es necesario introducir al menos el titulo")
       }
-      catch{
-        setResponse("Error al cargar el libro");
-      }}
+      else{ 
+        try{
+            await newLibro(body).then((result)=> {if (result!=undefined){console.log("RESULTADO UPLOAD: "+ result);setResponse(result)} else{setResponse("Error al cargar el libro");}})
+        }
+        catch{
+          setResponse("Error al cargar el libro");
+      }}}
     }
 
 /* response.data.secure_url es el link a guardar en la bbdd */

@@ -53,13 +53,12 @@ export default function InfoLibro({params}){
                     <div className="infoYboton">
                         <div className="info">
                             <h4 className="name">Descripción</h4>
-                            <p> {book.descripcion}</p>
+                            <p> {book.descripcion?book.descripcion:desconocido}</p>
                             <p><b className="name">Páginas: </b> {book.numeroPaginas?book.numeroPaginas:desconocido}</p>
                             <p><b className="name">Autor/es: </b> {book.autores?book.autores:desconocido}</p>
                             <p><b className="name">Edición: </b> {book.edicion?book.edicion:desconocido}</p>
                             <p><b className="name">Editorial: </b> {book.editorial?book.editorial:desconocido}</p>
                             <p><b className="name">Edad recomendada: </b> {book.edad?book.edad:desconocido}</p>
-                            <p><b className="name">Fecha edición: </b> {book.fechaEdicion?book.fechaEdicion:desconocido}</p>
                             <p><b className="name">Género: </b> {book.genero?book.genero:desconocido}</p>  
                         </div>
                     {book.disponible===true &&book.canReserve===true&& <button className="botonReserva" onClick={handleRerserva} disabled={isDisabled}> Reservar</button> }
