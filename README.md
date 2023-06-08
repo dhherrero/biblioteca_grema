@@ -30,7 +30,7 @@ CREATE USER 'root'@'localhost' IDENTIFIED BY '12345678';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
 FLUSH PRIVILEGES;
 ```
-#### 2.2 En el caso de no haber creado el usuario
+#### 2.2 Cambio de usuario y contraseña en el backend
 Hay que cambiar la clase de conexión a la base de datos en el backend. En la ruta:
 ```
 src/main/java/com/app/backbiblioteca/Back/config/DatabaseConfig.java
