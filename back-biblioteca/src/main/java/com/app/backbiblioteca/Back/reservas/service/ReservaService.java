@@ -33,15 +33,15 @@ public class ReservaService {
 
         if (!libroDisponible(reservasDTO.getIdLibro())){
             logger.warn("No puede reservar, no hay libros disponibles");
-            return HttpStatus.NOT_ACCEPTABLE;
+            return HttpStatus.FORBIDDEN;
         }
         if (yaLoHaReservado(reservasDTO.getNifUsuario(), reservasDTO.getIdLibro())){
             logger.warn("No puede reservar, la persona ya lo ha reservado");
-            return HttpStatus.NOT_ACCEPTABLE;
+            return HttpStatus.FORBIDDEN;
         }
         if (!puedeReservar(reservasDTO.getNifUsuario())){
             logger.warn("No puede reservar, ya tiene 3 reservas");
-            return HttpStatus.NOT_ACCEPTABLE;
+            return HttpStatus.FORBIDDEN;
         }
         String sql = "INSERT INTO reservas (nifUsuario, idLibro, fechaInicio, fechaFin, estadoReserva) VALUES(?, ?, ?, ?, ?)";
         try(Connection dbcon= db.hikariDataSource.getConnection(); PreparedStatement pst= dbcon.prepareStatement(sql)) {

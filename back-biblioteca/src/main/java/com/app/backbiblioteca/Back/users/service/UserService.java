@@ -129,10 +129,8 @@ public class UserService {
         }
         catch (SQLException throwables) {
             logger.error(throwables);
-
             return UserResponse.builder().estado(HttpStatus.NOT_ACCEPTABLE).build();
         }
-        logger.info("LOGIN ERROR");
         return UserResponse.builder().estado(HttpStatus.NOT_ACCEPTABLE).build();
     }
 
@@ -194,7 +192,7 @@ public class UserService {
             logger.info("USER  NOT CREATED");
         return HttpStatus.NOT_ACCEPTABLE;
         }
-        return HttpStatus.OK;
+        return HttpStatus.CREATED;
     }
 
     /**

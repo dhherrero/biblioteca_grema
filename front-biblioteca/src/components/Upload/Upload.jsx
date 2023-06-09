@@ -30,7 +30,7 @@ const UploadForm = () => {
         edicion:null,
         formato:null,
         genero:null,
-        copias:null,
+        copias:1,
         portada: null,
         imagen2: null,
         imagen3: null
