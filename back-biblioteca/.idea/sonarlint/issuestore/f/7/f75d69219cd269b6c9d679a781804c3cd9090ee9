@@ -1,0 +1,8 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆÖÅÇ
+=
+java:S1659"'Declare "idReserva" on a separate line.(‹ªàž
+`
+java:S1659"JDeclare "estadoReserva" and all following declarations on a separate line.(Ò÷×¤
+<
+java:S1659"&Declare "fechaFin" on a separate line.(€»¥

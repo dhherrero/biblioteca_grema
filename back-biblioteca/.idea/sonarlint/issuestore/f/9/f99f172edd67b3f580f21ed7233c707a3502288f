@@ -1,0 +1,34 @@
+
+_
+java:S1192#"IDefine a constant instead of duplicating this literal "password" 3 times.(ÉÒ—ø
+†
+java:S1319U"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ëÜ¬·
+w
+java:S1488""\Immediately return this expression instead of assigning it to the temporary variable "user".(ñÈï‘ÿÿÿÿÿ
+R
+java:S2629I"7Use the built-in formatting to construct this argument.(ÀâÊ½øÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(é•ê£ıÿÿÿÿ
+\
+java:S3457I"AFormat specifiers should be used instead of string concatenation.(ÀâÊ½øÿÿÿÿ
+}
+java:S4087^"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
+\
+java:S3457_"AFormat specifiers should be used instead of string concatenation.(şúÄ²ıÿÿÿÿ
+}
+java:S4087|"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
+W
+java:S3457}"AFormat specifiers should be used instead of string concatenation.(µ«Æ‘
+~
+java:S4087›"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
+~
+java:S4087Ÿ"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
+X
+java:S3457œ"AFormat specifiers should be used instead of string concatenation.(Ú€Æô
+X
+java:S3457 "AFormat specifiers should be used instead of string concatenation.(Ú€Æô
+~
+java:S4087»"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
+X
+java:S3457¼"AFormat specifiers should be used instead of string concatenation.(ƒÄ¬ï
+~
+java:S4087Õ"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ŞÁÆÿÿÿÿÿ
